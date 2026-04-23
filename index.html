@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Green — Virginia Home Cannabis Growing Guide</title>
+<meta name="description" content="A complete, interactive home cannabis growing guide for Virginia — strains, indoor/outdoor/hydro methods, grow stages, pest ID, harvest and cure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="age-gate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+  <div class="age-gate__card">
+    <h1 id="age-gate-title">Welcome</h1>
+    <p>This site contains information about home cannabis cultivation, legal for adults 21+ in Virginia.</p>
+    <p class="age-gate__question">Are you 21 or older?</p>
+    <div class="age-gate__actions">
+      <button id="age-yes" class="btn btn--primary">Yes, I'm 21+</button>
+      <a href="https://www.google.com" class="btn btn--ghost">No, exit</a>
+    </div>
+    <p class="age-gate__fine">Virginia law: 4 plants/household max. Primary residence only. No sales.</p>
+  </div>
+</div>
+
+<!-- STICKY NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand"><span class="leaf">&#127807;</span> Green</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" id="nav-toggle">&#9776;</button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#law">&#9878; Law</a>
+      <a href="#strains">&#127807; Strains</a>
+      <a href="#indoor">&#127968; Indoor</a>
+      <a href="#outdoor">&#9728; Outdoor</a>
+      <a href="#hydro">&#128167; Hydro</a>
+      <a href="#stages">&#127793; Stages</a>
+      <a href="#pests">&#128027; Pests</a>
+      <a href="#harvest">&#9986; Harvest</a>
+      <a href="#shop">&#128722; Shop</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Home Cannabis Growing Guide</p>
+    <h1 class="hero__title">Grow beautiful plants, <em>the Virginia way.</em></h1>
+    <p class="hero__lede">A full blueprint for adults 21+ — from seed to cure. Strains, indoor &amp; outdoor grows, hydroponics, pest ID, and the harvest-and-cure workflow that separates good flower from great.</p>
+    <div class="hero__cta">
+      <a href="#law" class="btn btn--primary">Start with the law</a>
+      <a href="#stages" class="btn btn--ghost">Jump to grow stages</a>
+    </div>
+  </div>
+  <div class="hero__banner" role="note">Legal in Virginia for adults 21+ under VA Cannabis Control Authority rules. See the Law section for the full rules.</div>
+</section>
+
+<!-- SECTIONS (filled via additional edits) -->
+<section id="law" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 1</p>
+    <h2>&#9878; Know the Law</h2>
+    <p class="lead">Virginia allows adults 21+ to grow at home within specific rules. Stay compliant and you're fine.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Rule</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Who can grow</td><td>Adults 21+ only</td></tr>
+          <tr><td>How many plants</td><td><strong>4 per household maximum</strong> (not per person)</td></tr>
+          <tr><td>Where</td><td>Your primary residence only</td></tr>
+          <tr><td>Visibility</td><td>Cannot be seen from public view without binoculars/aircraft</td></tr>
+          <tr><td>Access</td><td>Must be inaccessible to anyone under 21 &mdash; locked area strongly recommended</td></tr>
+          <tr><td>Plant tag</td><td>Required on every plant: your name, VA ID/license number, &ldquo;personal use&rdquo; notation</td></tr>
+          <tr><td>Selling</td><td><strong>Illegal.</strong> Any amount.</td></tr>
+          <tr><td>Concentrates</td><td>Cannot make extracts or concentrates from home-grown cannabis</td></tr>
+          <tr><td>Sharing</td><td>Can share up to 1 oz with other adults 21+ in private, without payment</td></tr>
+          <tr><td>Renters</td><td>Check your lease &mdash; landlords can prohibit cultivation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <h4>Practical tips for staying compliant</h4>
+      <ul>
+        <li>Grow indoors in a locked room or grow tent &mdash; solves visibility and access in one setup.</li>
+        <li>Label every plant from day one &mdash; the tag requirement applies at all growth stages.</li>
+        <li>Outdoor growers: solid privacy fence, not just hedges.</li>
+      </ul>
+      <p class="muted">Official resource: <a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia Cannabis Control Authority &mdash; Home Cultivation</a></p>
+    </div>
+  </div>
+</section>
+<section id="strains" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 2</p>
+    <h2>&#127807; Strains</h2>
+    <p class="lead">Categories describe <em>plant structure</em> more reliably than effects &mdash; but they're still the best shorthand for new growers.</p>
+
+    <div class="grid grid--2">
+      <div class="card"><h3>Indica <span class="badge badge--indica">Indica</span></h3>
+        <p><strong>Structure:</strong> Short, bushy, 2&ndash;4 ft; broad dark leaves; dense compact buds.</p>
+        <p><strong>Flower:</strong> 7&ndash;9 weeks (fast). <strong>Best for:</strong> Indoor, beginners.</p>
+        <p class="muted">Handles cooler temps, lower humidity; uniform growth; great for small spaces.</p>
+      </div>
+      <div class="card"><h3>Sativa <span class="badge badge--sativa">Sativa</span></h3>
+        <p><strong>Structure:</strong> Tall, lanky, 6+ ft; narrow light-green leaves; airy elongated buds.</p>
+        <p><strong>Flower:</strong> 10&ndash;16 weeks (slow). <strong>Best for:</strong> Outdoor, experienced growers.</p>
+        <p class="muted">Needs heat and long seasons. Virginia summers suit outdoor sativas.</p>
+      </div>
+      <div class="card"><h3>Hybrid <span class="badge badge--hybrid">Hybrid</span></h3>
+        <p><strong>Structure:</strong> Mix of indica/sativa traits; moderate height; varied bud density.</p>
+        <p><strong>Flower:</strong> 8&ndash;10 weeks. <strong>Best for:</strong> All skill levels.</p>
+        <p class="muted">Usually the easiest to grow; most modern strains are hybrids.</p>
+      </div>
+      <div class="card"><h3>Autoflower <span class="badge badge--auto">Auto</span></h3>
+        <p><strong>Structure:</strong> Compact 1&ndash;3 ft; flowers on <em>age</em>, not light schedule.</p>
+        <p><strong>Seed to harvest:</strong> 60&ndash;90 days. <strong>Best for:</strong> <strong>Beginners &amp; Virginia outdoor.</strong></p>
+        <p class="muted">Very forgiving. Multiple harvests per season. Slightly lower yields.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2rem">Photoperiod vs. Autoflower &mdash; quick decision</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Question</th><th>Photoperiod</th><th>Autoflower</th></tr></thead>
+        <tbody>
+          <tr><td>Growing indoors?</td><td>If you can control lighting</td><td>Great &mdash; simpler setup</td></tr>
+          <tr><td>Growing outdoors in VA?</td><td>Follows natural seasons, Oct harvest</td><td>Faster, more harvests, more discreet</td></tr>
+          <tr><td>First grow?</td><td>Possible but more to manage</td><td><strong>Strongly recommended</strong></td></tr>
+          <tr><td>Max yield/potency?</td><td>Yes</td><td>Not primary goal</td></tr>
+          <tr><td>Limited space?</td><td>No</td><td><strong>Yes</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:2rem">Beginner-recommended strains</h3>
+    <div class="filter" id="strain-filter" role="tablist" aria-label="Filter strains">
+      <button class="active" data-type="all">All</button>
+      <button data-type="indica">Indica</button>
+      <button data-type="sativa">Sativa</button>
+      <button data-type="hybrid">Hybrid</button>
+      <button data-type="auto">Auto</button>
+    </div>
+
+    <div class="grid grid--auto">
+      <div class="card strain" data-type="indica">
+        <div class="strain__head"><div class="strain__name">Northern Lights</div><span class="badge badge--indica">Indica</span></div>
+        <div class="strain__meta"><span>&#11088; Beginner</span><span>2&ndash;4 ft</span><span>7&ndash;9 wks</span></div>
+        <p class="strain__notes">One of the most forgiving strains ever bred. Compact, pest-resistant, dense resinous buds. The classic first grow.</p>
+      </div>
+      <div class="card strain" data-type="hybrid">
+        <div class="strain__head"><div class="strain__name">Blue Dream</div><span class="badge badge--hybrid">Sativa-dom Hybrid</span></div>
+        <div class="strain__meta"><span>&#11088;&#11088; Easy</span><span>3&ndash;5 ft</span><span>9&ndash;10 wks</span></div>
+        <p class="strain__notes">Very popular, blueberry + haze parentage. Tolerant of beginner mistakes. Works well outdoors in VA.</p>
+      </div>
+      <div class="card strain" data-type="hybrid">
+        <div class="strain__head"><div class="strain__name">White Widow</div><span class="badge badge--hybrid">Balanced</span></div>
+        <div class="strain__meta"><span>&#11088; Beginner</span><span>2&ndash;4 ft</span><span>8&ndash;9 wks</span></div>
+        <p class="strain__notes">Legendary genetics, stable, trichome-heavy. Forgiving in varied conditions.</p>
+      </div>
+      <div class="card strain" data-type="hybrid">
+        <div class="strain__head"><div class="strain__name">Girl Scout Cookies</div><span class="badge badge--hybrid">Indica-dom</span></div>
+        <div class="strain__meta"><span>&#11088;&#11088; Easy</span><span>3&ndash;4 ft</span><span>9&ndash;10 wks</span></div>
+        <p class="strain__notes">Complex earthy-sweet terpene profile. Dense buds. Indoor preferred.</p>
+      </div>
+      <div class="card strain" data-type="hybrid">
+        <div class="strain__head"><div class="strain__name">Gorilla Glue #4</div><span class="badge badge--hybrid">Balanced</span></div>
+        <div class="strain__meta"><span>&#11088;&#11088; Easy</span><span>3&ndash;4 ft</span><span>8&ndash;9 wks</span></div>
+        <p class="strain__notes">Famous for extreme resin production. High-yielding, very sticky. Responds well to training.</p>
+      </div>
+      <div class="card strain" data-type="sativa">
+        <div class="strain__head"><div class="strain__name">Amnesia Haze</div><span class="badge badge--sativa">Sativa-dom</span></div>
+        <div class="strain__meta"><span>&#11088;&#11088;&#11088; Intermediate</span><span>4&ndash;6 ft</span><span>10&ndash;12 wks</span></div>
+        <p class="strain__notes">Long flowering but rewarding. Great outdoor strain for VA summers. Citrus terpenes.</p>
+      </div>
+      <div class="card strain" data-type="auto">
+        <div class="strain__head"><div class="strain__name">Northern Lights Auto</div><span class="badge badge--auto">Auto</span></div>
+        <div class="strain__meta"><span>65&ndash;75 days</span><span>1.5&ndash;3 ft</span></div>
+        <p class="strain__notes">The classic made easy. Plant in May, harvest in July. VA outdoor-perfect.</p>
+      </div>
+      <div class="card strain" data-type="auto">
+        <div class="strain__head"><div class="strain__name">Gorilla Glue Auto</div><span class="badge badge--auto">Auto</span></div>
+        <div class="strain__meta"><span>70&ndash;80 days</span><span>2&ndash;3 ft</span></div>
+        <p class="strain__notes">High-potency auto. Dense, resinous. Very forgiving.</p>
+      </div>
+      <div class="card strain" data-type="auto">
+        <div class="strain__head"><div class="strain__name">Blue Dream Auto</div><span class="badge badge--auto">Auto</span></div>
+        <div class="strain__meta"><span>70&ndash;80 days</span><span>2&ndash;3 ft</span></div>
+        <p class="strain__notes">Sativa-leaning flavor and effect in an autoflower format.</p>
+      </div>
+      <div class="card strain" data-type="auto">
+        <div class="strain__head"><div class="strain__name">Royal Dwarf / Quick One</div><span class="badge badge--auto">Auto</span></div>
+        <div class="strain__meta"><span>55&ndash;65 days</span><span>1&ndash;2 ft</span></div>
+        <p class="strain__notes">Ultra-compact and ultra-fast. Perfect for balconies and stealth grows.</p>
+      </div>
+      <div class="card strain" data-type="auto">
+        <div class="strain__head"><div class="strain__name">Zkittlez Auto</div><span class="badge badge--auto">Auto</span></div>
+        <div class="strain__meta"><span>70&ndash;75 days</span><span>2&ndash;3 ft</span></div>
+        <p class="strain__notes">Fruity tropical terpenes. Very popular. Good yields for an auto.</p>
+      </div>
+    </div>
+
+    <details style="margin-top:1.5rem">
+      <summary>Cannabinoids &amp; terpenes &mdash; quick explainer</summary>
+      <p><strong>THC:</strong> primary psychoactive compound. Most home growers target 15&ndash;25%.<br>
+      <strong>CBD:</strong> non-intoxicating; relaxation, anti-anxiety, anti-inflammatory associations.<br>
+      <strong>CBN:</strong> increases with late harvest; associated with sedation. <strong>CBG:</strong> &ldquo;mother cannabinoid.&rdquo;</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Terpene</th><th>Aroma</th><th>Associated with</th></tr></thead>
+          <tbody>
+            <tr><td>Myrcene</td><td>Earthy, musky, mango</td><td>Relaxing, sedative</td></tr>
+            <tr><td>Limonene</td><td>Citrus, lemon</td><td>Uplifting, mood</td></tr>
+            <tr><td>Pinene</td><td>Pine, fresh</td><td>Alertness, memory</td></tr>
+            <tr><td>Linalool</td><td>Floral, lavender</td><td>Calming, stress relief</td></tr>
+            <tr><td>Caryophyllene</td><td>Pepper, spice</td><td>Anti-inflammatory</td></tr>
+            <tr><td>Humulene</td><td>Hoppy, earthy</td><td>Appetite-suppressing</td></tr>
+            <tr><td>Terpinolene</td><td>Fresh, piney, floral</td><td>Uplifting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Entourage effect:</strong> cannabinoids and terpenes work together &mdash; the full chemical profile shapes the experience, not just THC%.</p>
+    </details>
+  </div>
+</section>
+<section id="indoor" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 3</p>
+    <h2>&#127968; Indoor Growing</h2>
+    <p class="lead">Full control over environment &amp; light, year-round growing, and the legal requirements (visibility, access) solved in one locked tent.</p>
+
+    <h3>Core setup</h3>
+    <div class="grid grid--auto">
+      <div class="card"><h4>1. Grow tent</h4><p class="muted">4&times;2 or 4&times;4 for up to 4 plants.</p></div>
+      <div class="card"><h4>2. LED grow light</h4><p class="muted">Full spectrum, sized to tent.</p></div>
+      <div class="card"><h4>3. Inline fan + carbon filter</h4><p class="muted">Odor control &mdash; essential.</p></div>
+      <div class="card"><h4>4. Circulation fan</h4><p class="muted">Strengthens stems, prevents hotspots.</p></div>
+      <div class="card"><h4>5. Fabric pots</h4><p class="muted">3&ndash;5 gallon; air-pruning roots.</p></div>
+      <div class="card"><h4>6. Medium</h4><p class="muted">Soil or coco coir.</p></div>
+      <div class="card"><h4>7. Nutrients</h4><p class="muted">Veg + bloom formulas.</p></div>
+      <div class="card"><h4>8. pH meter</h4><p class="muted">Non-negotiable.</p></div>
+      <div class="card"><h4>9. Timer</h4><p class="muted">Automates light schedule.</p></div>
+      <div class="card"><h4>10. Hygrometer</h4><p class="muted">Monitor temp + RH.</p></div>
+    </div>
+
+    <h3 style="margin-top:2rem">Environment targets</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Parameter</th><th>Seedling</th><th>Vegetative</th><th>Flowering</th><th>Late Flower</th></tr></thead>
+        <tbody>
+          <tr><td>Temperature</td><td>72&ndash;80&deg;F</td><td>70&ndash;85&deg;F</td><td>65&ndash;80&deg;F</td><td>60&ndash;75&deg;F</td></tr>
+          <tr><td>Humidity (RH)</td><td>65&ndash;70%</td><td>50&ndash;70%</td><td>40&ndash;50%</td><td>30&ndash;40%</td></tr>
+          <tr><td>Light hours</td><td>18/6</td><td>18/6</td><td>12/12</td><td>12/12</td></tr>
+          <tr><td>pH (soil)</td><td>6.0&ndash;7.0</td><td>6.0&ndash;7.0</td><td>6.0&ndash;7.0</td><td>6.0&ndash;7.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout callout--warn"><strong>Critical:</strong> RH above 50% during flowering = bud rot risk.</div>
+
+    <details>
+      <summary>Lighting &mdash; schedules, spectrum, sizing</summary>
+      <p><strong>Schedules:</strong> Seedling/veg 18/6; flip to 12/12 to trigger flowering. Autoflowers stay on 18/6 for their entire life.</p>
+      <p><strong>Spectrum:</strong> Blue (400&ndash;500 nm) for veg, red (620&ndash;750 nm) for flower. Full-spectrum LED covers both &mdash; ideal.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tent</th><th>Plants</th><th>LED wattage (actual)</th></tr></thead>
+        <tbody>
+          <tr><td>2&times;2</td><td>1&ndash;2</td><td>200&ndash;300W</td></tr>
+          <tr><td>4&times;2</td><td>2&ndash;4</td><td>300&ndash;400W</td></tr>
+          <tr><td>4&times;4</td><td>4 (VA max)</td><td>400&ndash;600W</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>LED distance:</strong> seedling 24&ndash;36&quot;, veg 18&ndash;24&quot;, flower 12&ndash;18&quot;.</p>
+    </details>
+
+    <details>
+      <summary>Containers &amp; growing medium</summary>
+      <p><strong>Fabric pots</strong> beat plastic &mdash; roots air-prune naturally, no circling, better oxygen, better yield.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Medium</th><th>pH</th><th>Difficulty</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Pre-amended organic soil</td><td>6.0&ndash;7.0</td><td>&#11088; Easiest</td><td>Fox Farm Ocean Forest &mdash; built-in nutrients.</td></tr>
+          <tr><td>Coco coir</td><td>5.8&ndash;6.3</td><td>&#11088;&#11088; Moderate</td><td>Faster growth; needs full nutrients early.</td></tr>
+          <tr><td>Hydroponics</td><td>5.5&ndash;6.3</td><td>&#11088;&#11088;&#11088; Advanced</td><td>See Hydroponics section.</td></tr>
+        </tbody>
+      </table></div>
+      <p><strong>Beginner pick:</strong> Fox Farm Ocean Forest pre-amended soil.</p>
+    </details>
+
+    <details>
+      <summary>Ventilation &amp; odor control</summary>
+      <p>Carbon filter &rarr; flexible ducting &rarr; inline fan &rarr; out of tent. Scrubs odor before air leaves.</p>
+      <p><strong>Air exchange:</strong> replace tent volume every 1&ndash;3 minutes; match fan CFM to tent volume.</p>
+      <p><strong>Safety:</strong> install CO2 detectors. Don't overload circuits. Turn off UV lights before working in the tent.</p>
+    </details>
+  </div>
+</section>
+<section id="outdoor" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 4</p>
+    <h2>&#9728; Outdoor Growing in Virginia</h2>
+    <p class="lead">Virginia sits in USDA zones 5&ndash;8 (most of the state in 6&ndash;7). Warm humid summers are ideal for growth &mdash; but humidity means vigilance as harvest approaches in fall.</p>
+
+    <h3>Virginia outdoor calendar</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Month</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td>March&ndash;April</td><td>Start seeds indoors; prepare beds/containers</td></tr>
+        <tr><td>Late April&ndash;May</td><td>Transplant seedlings after last frost (zones 6&ndash;7: mid-May)</td></tr>
+        <tr><td>May&ndash;July</td><td>Vegetative growth; train; fertilize; manage pests</td></tr>
+        <tr><td>Late July&ndash;August</td><td>Plants enter flowering naturally (shorter days)</td></tr>
+        <tr><td>August&ndash;September</td><td>Flowering progresses; airflow; watch for bud rot</td></tr>
+        <tr><td>September&ndash;October</td><td>Harvest window; check trichomes weekly</td></tr>
+        <tr><td>Late October</td><td>Final harvest before first frost</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="grid grid--2" style="margin-top:1.5rem">
+      <div class="card"><h3>Site selection</h3>
+        <ul>
+          <li>6&ndash;8+ hours direct sun, south-facing ideal</li>
+          <li>Not visible from public &mdash; solid fence or hedge</li>
+          <li>Inaccessible to under-21 &mdash; locked gate</li>
+          <li>Good drainage; cannabis hates wet feet</li>
+          <li>Natural airflow reduces disease pressure</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Soil prep</h3>
+        <p>Rich, loamy, well-draining soil, pH 6.0&ndash;7.0. Soil test first &mdash; Virginia Cooperative Extension offers free/low-cost tests.</p>
+        <ul>
+          <li>Aged compost worked into top 12 in</li>
+          <li>Worm castings per plant hole</li>
+          <li>Perlite for drainage in clay soil</li>
+          <li>Dolomitic lime if pH below 6.0</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Watering</h3>
+        <p>Deep and infrequent. Let top 2 in dry between waterings. Avoid overhead watering in late flower. Drip or soaker hose is ideal.</p>
+      </div>
+      <div class="card"><h3>Mulch &amp; support</h3>
+        <p>2&ndash;3 in of organic mulch (straw, wood chips) retains moisture and suppresses weeds. Stake early &mdash; VA summer storms can topple big plants.</p>
+      </div>
+    </div>
+
+    <details style="margin-top:1rem">
+      <summary>Companion planting for cannabis</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Plant</th><th>Benefit</th></tr></thead>
+        <tbody>
+          <tr><td>Marigolds</td><td>Deter aphids, spider mites, nematodes</td></tr>
+          <tr><td>Basil</td><td>Repels aphids, thrips</td></tr>
+          <tr><td>Dill (flowering)</td><td>Attracts parasitic wasps</td></tr>
+          <tr><td>Lavender</td><td>Repels moths that lay caterpillar eggs</td></tr>
+          <tr><td>Clover</td><td>Nitrogen fixation; beneficial insect habitat</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+  </div>
+</section>
+<section id="hydro" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 5</p>
+    <h2>&#128167; Hydroponics</h2>
+    <p class="lead">Growing in nutrient-enriched water without soil. Up to 50% faster growth and 90% less water than soil &mdash; but no buffer if pH or EC drifts.</p>
+
+    <div class="grid grid--2">
+      <div class="card"><h3>DWC (Deep Water Culture)</h3>
+        <span class="badge badge--ok">Recommended</span>
+        <p>One plant per 5-gallon bucket, roots suspended in oxygenated nutrient solution. Simple DIY or kit. Outstanding quality with a dialed-in EC.</p>
+      </div>
+      <div class="card"><h3>Kratky Method</h3>
+        <p>Passive DWC &mdash; no pump or electricity. Plant sits above reservoir with air gap. Good for autoflowers in small setups.</p>
+      </div>
+      <div class="card"><h3>Coco coir + drip</h3>
+        <p>Technically soilless. Faster than soil, more forgiving than pure DWC. Great hydro bridge. pH target 5.8&ndash;6.2.</p>
+      </div>
+      <div class="card"><h3>Essentials</h3>
+        <ul>
+          <li>pH target 5.8&ndash;6.3 (check every 2&ndash;3 days)</li>
+          <li>Reservoir temp 65&ndash;72&deg;F (warm = root rot)</li>
+          <li>Full flush every 2 weeks</li>
+          <li>CalMag, Hydroguard, silica supplements</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2rem">EC targets by stage</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Stage</th><th>EC (mS/cm)</th></tr></thead>
+      <tbody>
+        <tr><td>Seedling</td><td>0.4&ndash;0.8</td></tr>
+        <tr><td>Early vegetative</td><td>0.8&ndash;1.3</td></tr>
+        <tr><td>Vegetative</td><td>1.3&ndash;1.7</td></tr>
+        <tr><td>Early flower</td><td>1.7&ndash;2.2</td></tr>
+        <tr><td>Peak flower</td><td>2.2&ndash;2.8</td></tr>
+        <tr><td>Late flower / flush</td><td>Taper down to 0</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout callout--warn"><strong>Pythium root rot</strong> thrives above 72&deg;F. Use ice bottles or a chiller. Run air stones 24/7. Add Hydroguard from day one.</div>
+  </div>
+</section>
+<section id="stages" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 6</p>
+    <h2>&#127793; Grow Stages</h2>
+    <p class="lead">Click a stage to see what's happening, what to do, and what to watch for.</p>
+
+    <div class="timeline">
+      <div class="timeline__track" id="timeline-track" role="tablist" aria-label="Grow stages"></div>
+      <div class="timeline__panel" id="timeline-panel" role="tabpanel"></div>
+    </div>
+
+    <details>
+      <summary>Training techniques at a glance (veg only)</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Technique</th><th>Difficulty</th><th>Benefit</th></tr></thead>
+        <tbody>
+          <tr><td>LST (Low Stress Training)</td><td>&#11088;</td><td>Tie branches down to spread canopy</td></tr>
+          <tr><td>Topping</td><td>&#11088;&#11088;</td><td>Cut main tip &rarr; 2 main colas</td></tr>
+          <tr><td>FIMing</td><td>&#11088;&#11088;</td><td>Like topping, less precise &mdash; 4 tops</td></tr>
+          <tr><td>SCROG</td><td>&#11088;&#11088;&#11088;</td><td>Horizontal screen for even canopy</td></tr>
+          <tr><td>SoG (Sea of Green)</td><td>&#11088;&#11088;</td><td>Many small plants flowered early</td></tr>
+          <tr><td>Defoliation</td><td>&#11088;&#11088;</td><td>Remove leaves blocking bud sites</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted"><strong>Autoflowers:</strong> LST only &mdash; do NOT top or FIM. They can't recover in time.</p>
+    </details>
+
+    <details>
+      <summary>NPK shift across the grow</summary>
+      <ul>
+        <li><strong>Veg:</strong> ~3:1:2 (N-dominant)</li>
+        <li><strong>Early flower:</strong> ~1:3:2</li>
+        <li><strong>Peak flower:</strong> ~1:3:4 (P/K-dominant, low N)</li>
+        <li><strong>Flush:</strong> 0:0:0 (plain water, final 1&ndash;2 weeks)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Sexing plants (photoperiod only)</summary>
+      <p>Only female plants produce buds. Males produce pollen sacks and should be removed immediately.</p>
+      <ul>
+        <li><strong>Female:</strong> white hair-like pistils at nodes</li>
+        <li><strong>Male:</strong> small round pollen sacks at nodes</li>
+        <li><strong>Hermaphrodite:</strong> both &mdash; usually stress-induced; remove</li>
+      </ul>
+      <p class="muted">Buying feminized seeds eliminates this concern &mdash; 99%+ female.</p>
+    </details>
+  </div>
+</section>
+<section id="pests" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 7</p>
+    <h2>&#128027; Pest &amp; Disease ID</h2>
+    <div class="callout callout--warn"><strong>Rule for flowering plants:</strong> avoid spraying anything on buds during the last 4&ndash;6 weeks of flower. Residues will be inhaled. Treat early, prevent aggressively.</div>
+
+    <h3>Pests</h3>
+    <div class="grid grid--auto">
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--danger">High</span><div class="pest__title">Spider mites</div></div>
+        <p><strong>#1 indoor pest.</strong> Fine webbing under leaves, tiny yellow/white stippling, bronze leaves in heavy infestations. Shake a leaf over white paper to confirm.</p>
+        <p class="muted"><strong>Treat:</strong> strong water spray to undersides, neem oil every 3 days, insecticidal soap, predatory mites. Keep RH above 60% in veg.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Med</span><div class="pest__title">Fungus gnats</div></div>
+        <p>Tiny dark flies around soil. Larvae in top inch eat roots &mdash; stunts growth, kills seedlings.</p>
+        <p class="muted"><strong>Treat:</strong> let soil dry between waterings, yellow sticky traps, beneficial nematodes, Bti drench.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Med</span><div class="pest__title">Aphids</div></div>
+        <p>Clusters on new growth and undersides. Sticky honeydew. Can spread hop latent viroid between plants.</p>
+        <p class="muted"><strong>Treat:</strong> water blast, insecticidal soap, neem oil, ladybugs or lacewings.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Med</span><div class="pest__title">Thrips</div></div>
+        <p>Silver/bronze streaks on leaves. Tiny tan or yellow 1 mm fast-movers. Black dropping specks.</p>
+        <p class="muted"><strong>Treat:</strong> spinosad (most effective), insecticidal soap, blue sticky traps, <em>Amblyseius cucumeris</em>.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Low</span><div class="pest__title">Whiteflies</div></div>
+        <p>Cloud of white insects when plant is disturbed. More common outdoors in humid VA summers.</p>
+        <p class="muted"><strong>Treat:</strong> yellow sticky traps, insecticidal soap, neem oil.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Med</span><div class="pest__title">Caterpillars / hemp borers</div></div>
+        <p>Holes in leaves, black droppings, tunnels inside buds. Corn earworm is the most destructive VA outdoor pest.</p>
+        <p class="muted"><strong>Treat:</strong> Bt <em>kurstaki</em>, spinosad, handpick, Trichogramma wasps.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Advanced</span><div class="pest__title">Broad / russet mites</div></div>
+        <p>New growth blistered, twisted, glossy, small. Often misdiagnosed. Invisible without 60x+ scope.</p>
+        <p class="muted"><strong>Treat:</strong> neem oil, predatory <em>Neoseiulus</em> mites, spinosad.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2rem">Diseases</h3>
+    <div class="grid grid--auto">
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--danger">Critical</span><div class="pest__title">Bud rot (Botrytis)</div></div>
+        <p><strong>The most devastating disease for VA outdoor.</strong> Buds look fine outside but gray/mushy/slimy inside. Starts in dense bud tissue &mdash; easily missed.</p>
+        <p class="muted"><strong>Act immediately:</strong> cut 2&ndash;3 cm beyond visible rot, sterilize scissors, don't compost, improve airflow, lower RH. Affected buds are unsafe.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--danger">High</span><div class="pest__title">Powdery mildew</div></div>
+        <p>White flour-like coating on leaves/stems. Can spread to buds &mdash; infected buds must be discarded.</p>
+        <p class="muted"><strong>Treat:</strong> remove leaves; potassium bicarbonate spray; milk spray (1:9); improve airflow. RH below 50% in flower.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--danger">High</span><div class="pest__title">Root rot (Pythium)</div></div>
+        <p>Primary hydro/coco threat. Roots brown, slimy, foul-smelling. Plant wilts with adequate water.</p>
+        <p class="muted"><strong>Treat:</strong> drain &amp; replace reservoir, add Hydroguard, lower temp below 68&deg;F, increase air stones.</p>
+      </div>
+      <div class="card pest">
+        <div class="pest__head"><span class="badge badge--warn">Med</span><div class="pest__title">Damping off</div></div>
+        <p>Seedling collapses at soil line overnight. Caused by Pythium/Botrytis in wet conditions.</p>
+        <p class="muted"><strong>Prevent only:</strong> well-draining mix, don't overwater, gentle airflow. No treatment once it strikes.</p>
+      </div>
+    </div>
+
+    <details style="margin-top:1.5rem">
+      <summary>Nutrient deficiency vs. disease &mdash; how to tell</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Symptom</th><th>Likely cause</th></tr></thead>
+        <tbody>
+          <tr><td>Yellowing on <strong>lower, older</strong> leaves</td><td>Nitrogen / mobile-nutrient deficiency</td></tr>
+          <tr><td>Yellowing on <strong>upper, newer</strong> leaves</td><td>Calcium/iron (immobile nutrients)</td></tr>
+          <tr><td>Brown irregular spots</td><td>Calcium deficiency or fungal disease</td></tr>
+          <tr><td>White powdery coating</td><td>Powdery mildew</td></tr>
+          <tr><td>Webbing on undersides</td><td>Spider mites</td></tr>
+          <tr><td>Blistered twisted new growth</td><td>Broad mites, heat stress, or pH issue</td></tr>
+          <tr><td>Wilts despite adequate water</td><td>Root rot, overwatering, or fusarium</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted"><strong>General rule:</strong> check pH first. Most &ldquo;mystery deficiencies&rdquo; are nutrient lockout from pH out of range.</p>
+    </details>
+
+    <details>
+      <summary>Organic spray reference</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Product</th><th>Treats</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Neem oil</td><td>Mites, aphids, PM, fungus gnats</td><td>Apply early &mdash; NOT on buds near harvest</td></tr>
+          <tr><td>Insecticidal soap</td><td>Mites, aphids, whiteflies, thrips</td><td>Contact killer; safe in early flower</td></tr>
+          <tr><td>Spinosad</td><td>Caterpillars, thrips, fungus gnats</td><td>OMRI-listed; very effective</td></tr>
+          <tr><td>Bt (<em>kurstaki</em>)</td><td>Caterpillars only</td><td>OMRI-listed</td></tr>
+          <tr><td>Bti</td><td>Fungus gnat larvae</td><td>Soil drench</td></tr>
+          <tr><td>Potassium bicarbonate</td><td>Powdery mildew</td><td>Surface pH change</td></tr>
+          <tr><td>Beneficial nematodes</td><td>Fungus gnats, root pests</td><td>Soil drench</td></tr>
+          <tr><td>Predatory mites</td><td>Spider / broad mites</td><td>Best biocontrol; veg + early flower</td></tr>
+          <tr><td>Hydroguard</td><td>Root rot prevention</td><td>Day-1 reservoir additive</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted"><strong>Important:</strong> stop all foliar sprays at least 4&ndash;6 weeks before harvest.</p>
+    </details>
+  </div>
+</section>
+<section id="harvest" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 8</p>
+    <h2>&#9986; Harvest &amp; Cure</h2>
+    <p class="lead">The final 2 weeks before harvest, the harvest day itself, and the weeks of cure determine 40&ndash;50% of final quality. Done right, you get smooth, flavorful, potent flower.</p>
+
+    <h3>Reading trichomes &mdash; interactive slider</h3>
+    <div class="trichome">
+      <div class="trichome__display">
+        <div id="trichome-circle" class="trichome__circle">&#10052;&#65039;</div>
+        <div>
+          <div class="trichome__label" id="trichome-label">Clear</div>
+          <span class="badge badge--warn" id="trichome-harvest">Too early</span>
+          <p class="trichome__desc" id="trichome-desc">Immature. THC not fully developed &mdash; wait longer before harvesting.</p>
+        </div>
+      </div>
+      <input id="trichome-slider" type="range" min="0" max="2" step="1" value="0" aria-label="Trichome maturity">
+      <div class="trichome__ticks"><span>Clear</span><span>Cloudy (peak)</span><span>Amber (sedative)</span></div>
+    </div>
+
+    <div class="table-wrap"><table>
+      <thead><tr><th>Goal</th><th>Trichome ratio</th></tr></thead>
+      <tbody>
+        <tr><td>Max THC potency</td><td>70&ndash;90% cloudy, 5&ndash;10% amber, minimal clear</td></tr>
+        <tr><td>Balanced effect</td><td>50&ndash;70% cloudy, 20&ndash;30% amber</td></tr>
+        <tr><td>Relaxing / sedative</td><td>70%+ amber</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="grid grid--2" style="margin-top:1.5rem">
+      <div class="card"><h3>Step 1 &mdash; Flushing</h3>
+        <p>Plain pH-adjusted water for the final 1&ndash;2 weeks. Removes residual nutrient salts, cleaner taste.</p>
+        <ul><li>Soil: 1&ndash;2 weeks</li><li>Coco: 1 week</li><li>Hydro: 3&ndash;7 days</li></ul>
+      </div>
+      <div class="card"><h3>Step 2 &mdash; Harvest day</h3>
+        <p>Morning after dark period, sterile sharp scissors, gloves. Cut branches; remove large fan leaves immediately.</p>
+        <p class="muted"><strong>Virginia humidity:</strong> wet trim is generally recommended.</p>
+      </div>
+      <div class="card"><h3>Step 3 &mdash; Drying</h3>
+        <p><strong>60&ndash;70&deg;F, 55&ndash;62% RH</strong>, gentle airflow, dark. Hang upside-down on line/hangers. 7&ndash;14 days.</p>
+        <p class="muted"><strong>Done when:</strong> small stems snap cleanly. Outer bud dry to touch, not crumbly.</p>
+      </div>
+      <div class="card"><h3>Step 4 &mdash; Curing</h3>
+        <p>Glass mason jars, 55&ndash;62% RH. Burp daily weeks 1&ndash;2, every 2&ndash;3 days through week 4, weekly after.</p>
+        <p class="muted"><strong>Minimum 2 weeks, ideal 4&ndash;8, exceptional 3&ndash;6 months.</strong> Boveda/Integra packs make it forgiving.</p>
+      </div>
+    </div>
+
+    <div class="checklist" data-key="harvest">
+      <h3>Harvest sequence checklist</h3>
+      <p class="muted">Tap to check off &mdash; progress saved locally.</p>
+      <ul>
+        <li><input type="checkbox"><span>Trichomes predominantly cloudy with target amber %</span></li>
+        <li><input type="checkbox"><span>70&ndash;90% of pistils darkened</span></li>
+        <li><input type="checkbox"><span>Buds dense and swollen</span></li>
+        <li><input type="checkbox"><span>Flush complete (7&ndash;14 days plain water)</span></li>
+        <li><input type="checkbox"><span>Fan leaves showing natural yellowing</span></li>
+        <li><input type="checkbox"><span>Aroma at peak intensity</span></li>
+        <li><input type="checkbox"><span>Drying space prepared (60&ndash;65&deg;F, 55&ndash;62% RH, airflow set)</span></li>
+        <li><input type="checkbox"><span>Tools sterilized</span></li>
+        <li><input type="checkbox"><span>Jars, hygrometers, humidity packs ready</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="shop" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Section 9</p>
+    <h2>&#128722; Shop</h2>
+    <p class="lead">Reliable vendors and gear. All listed seed banks ship to Virginia legally.</p>
+
+    <details open>
+      <summary>Seeds</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Vendor</th><th>Specialty</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Homegrown Cannabis Co.</td><td>Wide selection, feminized + auto + CBD</td><td>Beginner-friendly guides</td></tr>
+          <tr><td>ILGM</td><td>Beginner favorite</td><td>Germination guarantee</td></tr>
+          <tr><td>Seedsman</td><td>Massive catalog, European genetics</td><td>Ships to VA</td></tr>
+          <tr><td>Royal Queen Seeds</td><td>Premium European genetics</td><td>Excellent quality</td></tr>
+          <tr><td>Herbies Seeds</td><td>Large catalog</td><td>Competitive prices</td></tr>
+          <tr><td>Crop King Seeds</td><td>Canadian</td><td>Reliable germination</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted">Look for <strong>feminized</strong> (nearly all female) and <strong>autoflowering</strong> (no light schedule) seeds.</p>
+    </details>
+
+    <details>
+      <summary>Indoor equipment</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Product</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Spider Farmer SF-2000 LED</td><td>Excellent mid-range LED, Samsung diodes, 4&times;2</td></tr>
+          <tr><td>Mars Hydro TS-1000 LED</td><td>Budget full spectrum, 2&times;2&ndash;3&times;3</td></tr>
+          <tr><td>AC Infinity CLOUDLAB 844 Tent</td><td>Heavy-duty 4&times;4</td></tr>
+          <tr><td>AC Infinity CLOUDLAB 632 Tent</td><td>2&times;4 for 1&ndash;2 plants</td></tr>
+          <tr><td>AC Infinity CLOUDLINE T4 fan</td><td>Very quiet, speed controller</td></tr>
+          <tr><td>Vivosun carbon filter</td><td>Odor control for 4&times;4</td></tr>
+          <tr><td>5-gal fabric pots (10-pack)</td><td>Best container for cannabis</td></tr>
+          <tr><td>Digital hygrometer/thermometer</td><td>Get 2 (tent + drying room)</td></tr>
+          <tr><td>Smart outlet/timer</td><td>Automate light schedule</td></tr>
+          <tr><td>Jeweler's loupe 60x</td><td>Trichome inspection</td></tr>
+          <tr><td>USB digital microscope</td><td>Phone-connected trichome viewing</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+
+    <details>
+      <summary>Hydroponics</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Product</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>GH WaterFarm complete kit</td><td>Good DWC starter</td></tr>
+          <tr><td>GH Flora Trio</td><td>Industry-standard 3-part</td></tr>
+          <tr><td>Advanced Nutrients pH Perfect</td><td>Auto-adjusts pH</td></tr>
+          <tr><td>Apera pH20 meter</td><td>Accurate, affordable</td></tr>
+          <tr><td>Bluelab Truncheon EC meter</td><td>Simple EC/PPM</td></tr>
+          <tr><td>Botanicare Hydroguard</td><td>Root rot prevention</td></tr>
+          <tr><td>Botanicare CalMag Plus</td><td>Ca/Mg supplement</td></tr>
+          <tr><td>Hydroton clay pebbles</td><td>Standard DWC medium</td></tr>
+          <tr><td>Canna Coco Pro Plus</td><td>Premium coco coir</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+
+    <details>
+      <summary>Supplies &amp; pest management</summary>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Product</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>Fox Farm Ocean Forest soil</td><td>Best pre-amended beginner soil</td></tr>
+          <tr><td>Fox Farm Trio</td><td>Complete soil nutrient system</td></tr>
+          <tr><td>GH pH Up &amp; Down</td><td>pH adjustment</td></tr>
+          <tr><td>Rapid Rooter plugs</td><td>Germination &amp; cloning</td></tr>
+          <tr><td>LST clips</td><td>Low-stress training</td></tr>
+          <tr><td>Plant yo-yos</td><td>Late-flower branch support</td></tr>
+          <tr><td>Boveda 62% packs</td><td>Curing &amp; storage</td></tr>
+          <tr><td>Wide-mouth mason jars</td><td>Curing</td></tr>
+          <tr><td>Trimming scissors (curved)</td><td>Bud trimming</td></tr>
+          <tr><td>Monterey Bt / Spinosad</td><td>Caterpillars / thrips (OMRI)</td></tr>
+          <tr><td>Safer Insect Killing Soap</td><td>Aphids, mites, whiteflies</td></tr>
+          <tr><td>Milstop (K bicarbonate)</td><td>Powdery mildew</td></tr>
+          <tr><td>Beneficial nematodes</td><td>Fungus gnat larvae</td></tr>
+          <tr><td>Predatory mite sachets</td><td>Spider mite biocontrol</td></tr>
+        </tbody>
+      </table></div>
+    </details>
+  </div>
+</section>
+<section id="quickref" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Appendix A</p>
+    <h2>Quick Reference</h2>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3>Environment</h3>
+        <ul>
+          <li>Veg: 70&ndash;85&deg;F / 50&ndash;70% RH / 18/6</li>
+          <li>Flower: 65&ndash;80&deg;F / 40&ndash;50% RH / 12/12</li>
+          <li>Late flower RH: 35&ndash;45% (bud rot)</li>
+          <li>Autoflowers: 18/6 throughout</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>pH</h3>
+        <p>Soil: <strong>6.0&ndash;7.0</strong><br>Hydro: <strong>5.8&ndash;6.3</strong></p>
+        <p class="muted">Check pH first when troubleshooting.</p>
+      </div>
+      <div class="card">
+        <h3>Nutrient direction</h3>
+        <ul>
+          <li>Veg: N-heavy (3:1:2)</li>
+          <li>Flower: P/K-heavy (1:3:4)</li>
+          <li>Final 1&ndash;2 weeks: flush (plain water)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Harvest trichome targets</h3>
+        <ul>
+          <li>Max THC: 70&ndash;90% cloudy, &lt;10% amber</li>
+          <li>Balanced: 50&ndash;70% cloudy, 20&ndash;30% amber</li>
+          <li>Sedative: 70%+ amber</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Dry &amp; cure</h3>
+        <p><strong>Dry:</strong> 60&ndash;65&deg;F / 55&ndash;62% RH / dark / 7&ndash;14 days.<br>
+        <strong>Cure:</strong> glass jars, 55&ndash;62% RH, burp daily weeks 1&ndash;2, minimum 4 weeks.</p>
+      </div>
+      <div class="card">
+        <h3>Virginia law &mdash; 5 rules</h3>
+        <ul>
+          <li>4 plants per household max</li>
+          <li>Primary residence only</li>
+          <li>Not visible from public</li>
+          <li>Inaccessible to under-21</li>
+          <li>Tag every plant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="glossary" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Appendix B</p>
+    <h2>Glossary</h2>
+    <div class="grid grid--2">
+      <div class="card"><h4>Photoperiod</h4><p>Strain that flowers based on light schedule (12/12).</p></div>
+      <div class="card"><h4>Autoflower</h4><p>Strain that flowers based on age, not light.</p></div>
+      <div class="card"><h4>Feminized</h4><p>Seeds bred to produce only female plants (99%+).</p></div>
+      <div class="card"><h4>Trichomes</h4><p>Tiny resin glands on buds; contain THC, CBD, terpenes.</p></div>
+      <div class="card"><h4>Calyx</h4><p>Small structure forming each bud &mdash; trichome-dense.</p></div>
+      <div class="card"><h4>Cola</h4><p>Main bud cluster at top of plant or branch.</p></div>
+      <div class="card"><h4>Node</h4><p>Point on stem where branches emerge.</p></div>
+      <div class="card"><h4>Topping</h4><p>Cutting main stem tip to create two main colas.</p></div>
+      <div class="card"><h4>LST</h4><p>Low-Stress Training &mdash; tying branches down.</p></div>
+      <div class="card"><h4>SCROG</h4><p>Screen of Green &mdash; horizontal net to train canopy.</p></div>
+      <div class="card"><h4>Flip</h4><p>Switch from 18/6 to 12/12 to trigger flowering.</p></div>
+      <div class="card"><h4>Flush</h4><p>Feeding only plain water before harvest.</p></div>
+      <div class="card"><h4>Terpenes</h4><p>Aromatic compounds driving smell, flavor, effect.</p></div>
+      <div class="card"><h4>EC / PPM</h4><p>Measures of nutrient concentration in solution.</p></div>
+      <div class="card"><h4>RH</h4><p>Relative humidity.</p></div>
+      <div class="card"><h4>IPM</h4><p>Integrated Pest Management &mdash; prevention-first.</p></div>
+      <div class="card"><h4>Wet / Dry trim</h4><p>Trim sugar leaves right after harvest vs. after drying.</p></div>
+      <div class="card"><h4>Burping</h4><p>Opening curing jars briefly to exchange air.</p></div>
+      <div class="card"><h4>Pistils</h4><p>Hairs on buds; change from white to orange/red at maturity.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FLOATING LEGAL HELP -->
+<button class="help-fab" id="help-fab" aria-label="Open legal summary">?</button>
+<div class="help-modal" id="help-modal" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden>
+  <div class="help-modal__card">
+    <button class="help-modal__close" id="help-close" aria-label="Close">&times;</button>
+    <h2 id="help-title">Virginia Law — Quick Summary</h2>
+    <ul>
+      <li>Adults 21+ only. Primary residence only.</li>
+      <li>4 plants per <em>household</em> maximum (not per person).</li>
+      <li>Not visible from public view. Inaccessible to anyone under 21.</li>
+      <li>Tag every plant: name, VA ID, &ldquo;personal use.&rdquo;</li>
+      <li>No sales. No home-made extracts or concentrates.</li>
+    </ul>
+    <p><a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia CCA — Home Cultivation &rarr;</a></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p><strong>Green</strong> &middot; Virginia Home Cannabis Growing Guide</p>
+    <p class="footer__disclaimer">Informational only. Not medical advice. Follow all Virginia laws; rules change &mdash; verify current regulations with the <a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia CCA</a> before cultivating.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

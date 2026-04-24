@@ -137,7 +137,7 @@
         var options = [
           { k: 'wait', title: 'Not yet &mdash; wait', why: 'Harvesting too early is the #1 beginner mistake. The last 1–2 weeks add 15–25% of final weight and peak trichome development.' },
           { k: 'soon', title: 'Getting close &mdash; start the flush', why: 'Begin plain pH-adjusted water. Check trichomes every 2–3 days. Harvest in 7–14 days.' },
-          { k: 'go', title: 'Harvest window &mdash; go', why: 'Peak THC. Morning harvest after the dark period. Sterilize tools. Prep the dry room at 60–65°F / 55–62% RH.' },
+          { k: 'go', title: 'Harvest window &mdash; go', why: 'Peak THC. Morning harvest after the dark period. Sterilize tools. Prep the dry room at 60–65°F / 55–62% RH. Paper bags ready for the cure.' },
           { k: 'past', title: 'Past peak &mdash; harvest now', why: 'You’re heading into sedative/couch-lock territory. If that’s the goal, perfect. If not, cut today.' }
         ];
         var best = options[0], hi = -1;

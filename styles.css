@@ -164,14 +164,6 @@ details[open] summary::before { content: "\2212"; }
 .checklist li input { width: 18px; height: 18px; accent-color: var(--sage); cursor: pointer; }
 .checklist li.done span { text-decoration: line-through; opacity: .55; }
 
-/* Help FAB */
-.help-fab { position: fixed; bottom: 1.2rem; right: 1.2rem; width: 52px; height: 52px; border-radius: 50%; background: var(--terra); color: #fff; border: 0; font-size: 1.4rem; font-weight: 700; cursor: pointer; box-shadow: 0 6px 16px rgba(196,98,45,.35); z-index: 40; }
-.help-fab:hover { background: #a8521f; }
-.help-modal { position: fixed; inset: 0; background: rgba(46,36,22,.72); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 1rem; }
-.help-modal[hidden] { display: none; }
-.help-modal__card { background: var(--card); border-radius: var(--radius); padding: 1.8rem; max-width: 480px; width: 100%; position: relative; box-shadow: var(--shadow); }
-.help-modal__close { position: absolute; top: .5rem; right: .8rem; background: transparent; border: 0; font-size: 1.8rem; cursor: pointer; color: var(--ink); }
-
 /* Footer */
 .footer { background: var(--ink); color: #d8cdb7; padding: 2rem 1rem; text-align: center; margin-top: 2rem; }
 .footer__inner { max-width: var(--maxw); margin: 0 auto; }

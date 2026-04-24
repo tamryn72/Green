@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Green — Virginia Home Cannabis Growing Guide</title>
-<meta name="description" content="A complete, interactive home cannabis growing guide for Virginia — strains, indoor/outdoor/hydro methods, grow stages, pest ID, harvest and cure.">
+<title>Green — The Fabrizio Method</title>
+<meta name="description" content="The Fabrizio Method — an interactive home cannabis growing guide with quizzes, grow journal, strains, indoor/outdoor/hydro methods, pest ID, and harvest-and-cure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
     <a href="#top" class="nav__brand"><span class="leaf">&#127807;</span> Green</a>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" id="nav-toggle">&#9776;</button>
     <nav class="nav__links" id="nav-links">
-      <a href="#law">&#9878; Law</a>
+      <a href="#quizzes">&#10067; Quizzes</a>
       <a href="#strains">&#127807; Strains</a>
       <a href="#indoor">&#127968; Indoor</a>
       <a href="#outdoor">&#9728; Outdoor</a>
@@ -40,7 +40,9 @@
       <a href="#stages">&#127793; Stages</a>
       <a href="#pests">&#128027; Pests</a>
       <a href="#harvest">&#9986; Harvest</a>
+      <a href="#journal">&#128214; Journal</a>
       <a href="#shop">&#128722; Shop</a>
+      <a href="#law">&#9878; Law</a>
     </nav>
   </div>
 </header>
@@ -50,58 +52,53 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero__inner">
-    <p class="hero__eyebrow">Home Cannabis Growing Guide</p>
-    <h1 class="hero__title">Grow beautiful plants, <em>the Virginia way.</em></h1>
-    <p class="hero__lede">A full blueprint for adults 21+ — from seed to cure. Strains, indoor &amp; outdoor grows, hydroponics, pest ID, and the harvest-and-cure workflow that separates good flower from great.</p>
+    <p class="hero__eyebrow">The Fabrizio Method</p>
+    <h1 class="hero__title">Grow beautiful plants, <em>the Fabrizio way.</em></h1>
+    <p class="hero__lede">From seed to cure &mdash; strains, indoor &amp; outdoor grows, hydroponics, pest ID, harvest &amp; cure. Plus quizzes, a grow journal, and Fabrizio's own tweaks.</p>
     <div class="hero__cta">
-      <a href="#law" class="btn btn--primary">Start with the law</a>
-      <a href="#stages" class="btn btn--ghost">Jump to grow stages</a>
+      <a href="#quizzes" class="btn btn--primary">Take a quiz</a>
+      <a href="#strains" class="btn btn--ghost">Browse strains</a>
+      <a href="#journal" class="btn btn--ghost">Start a journal</a>
     </div>
   </div>
-  <div class="hero__banner" role="note">Legal in Virginia for adults 21+ under VA Cannabis Control Authority rules. See the Law section for the full rules.</div>
 </section>
 
-<!-- SECTIONS (filled via additional edits) -->
-<section id="law" class="section">
+<!-- FABRIZIO PICK -->
+<section class="section" style="padding-top:1rem;padding-bottom:0">
   <div class="section__inner">
-    <p class="section__eyebrow">Section 1</p>
-    <h2>&#9878; Know the Law</h2>
-    <p class="lead">Virginia allows adults 21+ to grow at home within specific rules. Stay compliant and you're fine.</p>
+    <div class="callout"><strong>Fabrizio's pick &mdash; fertilizer:</strong> Fox Farm Organic. He'll layer in his own tweaks as we go; watch this space.</div>
+  </div>
+</section>
 
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Rule</th><th>Detail</th></tr></thead>
-        <tbody>
-          <tr><td>Who can grow</td><td>Adults 21+ only</td></tr>
-          <tr><td>How many plants</td><td><strong>4 per household maximum</strong> (not per person)</td></tr>
-          <tr><td>Where</td><td>Your primary residence only</td></tr>
-          <tr><td>Visibility</td><td>Cannot be seen from public view without binoculars/aircraft</td></tr>
-          <tr><td>Access</td><td>Must be inaccessible to anyone under 21 &mdash; locked area strongly recommended</td></tr>
-          <tr><td>Plant tag</td><td>Required on every plant: your name, VA ID/license number, &ldquo;personal use&rdquo; notation</td></tr>
-          <tr><td>Selling</td><td><strong>Illegal.</strong> Any amount.</td></tr>
-          <tr><td>Concentrates</td><td>Cannot make extracts or concentrates from home-grown cannabis</td></tr>
-          <tr><td>Sharing</td><td>Can share up to 1 oz with other adults 21+ in private, without payment</td></tr>
-          <tr><td>Renters</td><td>Check your lease &mdash; landlords can prohibit cultivation</td></tr>
-        </tbody>
-      </table>
-    </div>
+<section id="quizzes" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Quick Picks</p>
+    <h2>&#10067; Quizzes</h2>
+    <p class="lead">Too lazy to read? Pick a quiz, answer a few questions, get Fabrizio's recommendation.</p>
 
-    <div class="callout">
-      <h4>Practical tips for staying compliant</h4>
-      <ul>
-        <li>Grow indoors in a locked room or grow tent &mdash; solves visibility and access in one setup.</li>
-        <li>Label every plant from day one &mdash; the tag requirement applies at all growth stages.</li>
-        <li>Outdoor growers: solid privacy fence, not just hedges.</li>
-      </ul>
-      <p class="muted">Official resource: <a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia Cannabis Control Authority &mdash; Home Cultivation</a></p>
+    <div class="quiz-grid">
+      <details class="quiz" data-quiz="strain"><summary>&#127807; What strain should I grow?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
+      <details class="quiz" data-quiz="method"><summary>&#127968; Indoor, outdoor, or hydro?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
+      <details class="quiz" data-quiz="bug"><summary>&#128027; What bug is that?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
+      <details class="quiz" data-quiz="harvest"><summary>&#9986; Is she ready to harvest?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
+      <details class="quiz" data-quiz="deficiency"><summary>&#129504; Deficiency or disease?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
+      <details class="quiz" data-quiz="ph"><summary>&#128167; Why is my pH drifting?</summary>
+        <div class="quiz__body" data-quiz-body></div></details>
     </div>
   </div>
 </section>
+
 <section id="strains" class="section section--alt">
   <div class="section__inner">
     <p class="section__eyebrow">Section 2</p>
     <h2>&#127807; Strains</h2>
     <p class="lead">Categories describe <em>plant structure</em> more reliably than effects &mdash; but they're still the best shorthand for new growers.</p>
+    <figure class="photo-slot"><img src="images/strains-hero.jpg" alt="" onerror="this.remove()"><figcaption>&#128247; Drop a hero photo at <code>images/strains-hero.jpg</code></figcaption></figure>
 
     <div class="grid grid--2">
       <div class="card"><h3>Indica <span class="badge badge--indica">Indica</span></h3>
@@ -235,6 +232,7 @@
     <p class="section__eyebrow">Section 3</p>
     <h2>&#127968; Indoor Growing</h2>
     <p class="lead">Full control over environment &amp; light, year-round growing, and the legal requirements (visibility, access) solved in one locked tent.</p>
+    <figure class="photo-slot"><img src="images/indoor-setup.jpg" alt="" onerror="this.remove()"><figcaption>&#128247; Drop your tent setup photo at <code>images/indoor-setup.jpg</code></figcaption></figure>
 
     <h3>Core setup</h3>
     <div class="grid grid--auto">
@@ -306,6 +304,7 @@
     <p class="section__eyebrow">Section 4</p>
     <h2>&#9728; Outdoor Growing in Virginia</h2>
     <p class="lead">Virginia sits in USDA zones 5&ndash;8 (most of the state in 6&ndash;7). Warm humid summers are ideal for growth &mdash; but humidity means vigilance as harvest approaches in fall.</p>
+    <figure class="photo-slot"><img src="images/outdoor.jpg" alt="" onerror="this.remove()"><figcaption>&#128247; Drop your outdoor garden photo at <code>images/outdoor.jpg</code></figcaption></figure>
 
     <h3>Virginia outdoor calendar</h3>
     <div class="table-wrap"><table>
@@ -458,6 +457,7 @@
   <div class="section__inner">
     <p class="section__eyebrow">Section 7</p>
     <h2>&#128027; Pest &amp; Disease ID</h2>
+    <figure class="photo-slot"><img src="images/pests.jpg" alt="" onerror="this.remove()"><figcaption>&#128247; Drop a pest close-up at <code>images/pests.jpg</code></figcaption></figure>
     <div class="callout callout--warn"><strong>Rule for flowering plants:</strong> avoid spraying anything on buds during the last 4&ndash;6 weeks of flower. Residues will be inhaled. Treat early, prevent aggressively.</div>
 
     <h3>Pests</h3>
@@ -565,6 +565,7 @@
     <p class="section__eyebrow">Section 8</p>
     <h2>&#9986; Harvest &amp; Cure</h2>
     <p class="lead">The final 2 weeks before harvest, the harvest day itself, and the weeks of cure determine 40&ndash;50% of final quality. Done right, you get smooth, flavorful, potent flower.</p>
+    <figure class="photo-slot"><img src="images/harvest.jpg" alt="" onerror="this.remove()"><figcaption>&#128247; Drop a harvest/trichome close-up at <code>images/harvest.jpg</code></figcaption></figure>
 
     <h3>Reading trichomes &mdash; interactive slider</h3>
     <div class="trichome">
@@ -625,6 +626,44 @@
     </div>
   </div>
 </section>
+
+<section id="journal" class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">Grower's log</p>
+    <h2>&#128214; Grow Journal</h2>
+    <p class="lead">Log feedings, training, pest checks, pH readings &mdash; anything you want to remember. Saved to this browser only.</p>
+
+    <div class="journal">
+      <form class="journal__form" id="journal-form" autocomplete="off">
+        <div class="journal__row">
+          <label>Plant <input type="text" name="plant" placeholder="e.g. NL #1" required></label>
+          <label>Stage
+            <select name="stage">
+              <option>Germination</option>
+              <option>Seedling</option>
+              <option selected>Vegetative</option>
+              <option>Pre-flower</option>
+              <option>Flowering</option>
+              <option>Harvest</option>
+              <option>Drying</option>
+              <option>Curing</option>
+            </select>
+          </label>
+          <label>Title <input type="text" name="title" placeholder="Fed &amp; topped" required></label>
+        </div>
+        <label>Notes <textarea name="body" rows="3" placeholder="pH 6.3, 1/2 dose Fox Farm Grow Big, topped node 5..."></textarea></label>
+        <div class="journal__actions">
+          <button type="submit" class="btn btn--primary">Add entry</button>
+          <button type="button" class="btn btn--ghost" id="journal-export">Export .json</button>
+          <button type="button" class="btn btn--ghost" id="journal-clear">Clear all</button>
+        </div>
+      </form>
+      <div class="journal__list" id="journal-list" aria-live="polite"></div>
+      <p class="muted">Entries save locally in your browser. No account. No server. Clearing cookies/site data will erase them &mdash; export if you care.</p>
+    </div>
+  </div>
+</section>
+
 <section id="shop" class="section">
   <div class="section__inner">
     <p class="section__eyebrow">Section 9</p>
@@ -790,24 +829,35 @@
   </div>
 </section>
 
-</main>
+<section id="law" class="section section--alt">
+  <div class="section__inner">
+    <p class="section__eyebrow">Appendix C</p>
+    <h2>&#9878; Virginia Law</h2>
+    <p class="lead">The short version &mdash; the rules that matter for home growers in Virginia.</p>
 
-<!-- FLOATING LEGAL HELP -->
-<button class="help-fab" id="help-fab" aria-label="Open legal summary">?</button>
-<div class="help-modal" id="help-modal" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden>
-  <div class="help-modal__card">
-    <button class="help-modal__close" id="help-close" aria-label="Close">&times;</button>
-    <h2 id="help-title">Virginia Law — Quick Summary</h2>
-    <ul>
-      <li>Adults 21+ only. Primary residence only.</li>
-      <li>4 plants per <em>household</em> maximum (not per person).</li>
-      <li>Not visible from public view. Inaccessible to anyone under 21.</li>
-      <li>Tag every plant: name, VA ID, &ldquo;personal use.&rdquo;</li>
-      <li>No sales. No home-made extracts or concentrates.</li>
-    </ul>
-    <p><a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia CCA — Home Cultivation &rarr;</a></p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Rule</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Who can grow</td><td>Adults 21+</td></tr>
+          <tr><td>How many plants</td><td><strong>4 per household</strong> (not per person)</td></tr>
+          <tr><td>Where</td><td>Your primary residence</td></tr>
+          <tr><td>Visibility</td><td>Not visible from public view</td></tr>
+          <tr><td>Access</td><td>Inaccessible to anyone under 21</td></tr>
+          <tr><td>Plant tag</td><td>Name, VA ID, &ldquo;personal use&rdquo; on every plant</td></tr>
+          <tr><td>Selling</td><td>Not allowed</td></tr>
+          <tr><td>Concentrates</td><td>No home-made extracts</td></tr>
+          <tr><td>Sharing</td><td>Up to 1 oz with other adults 21+, no payment</td></tr>
+          <tr><td>Renters</td><td>Check your lease</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="muted">Full rules: <a href="https://cca.virginia.gov/resources/homecultivation" target="_blank" rel="noopener">Virginia CCA &mdash; Home Cultivation</a></p>
   </div>
-</div>
+</section>
+
+</main>
 
 <footer class="footer">
   <div class="footer__inner">
@@ -817,5 +867,7 @@
 </footer>
 
 <script src="script.js" defer></script>
+<script src="quizzes.js" defer></script>
+<script src="journal.js" defer></script>
 </body>
 </html>

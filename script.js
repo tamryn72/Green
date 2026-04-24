@@ -114,14 +114,3 @@
   });
 })();
 
-// Help FAB modal
-(function () {
-  var fab = document.getElementById('help-fab');
-  var modal = document.getElementById('help-modal');
-  var close = document.getElementById('help-close');
-  if (!fab) return;
-  fab.addEventListener('click', function () { modal.hidden = false; });
-  close.addEventListener('click', function () { modal.hidden = true; });
-  modal.addEventListener('click', function (e) { if (e.target === modal) modal.hidden = true; });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') modal.hidden = true; });
-})();
